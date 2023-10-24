@@ -13,6 +13,7 @@ import de.pxav.halloween.pumpkins.PumpkinLauncherScheduler;
 import de.pxav.halloween.utils.MathUtils;
 import de.pxav.halloween.utils.PlayerHandler;
 import org.bukkit.Bukkit;
+import org.bukkit.Location;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -49,7 +50,6 @@ public class Halloween extends JavaPlugin {
     private final PumpkinDistanceScheduler pumpkinDistanceScheduler = new PumpkinDistanceScheduler();
     private final PumpkinLauncherScheduler pumpkinLauncherScheduler = new PumpkinLauncherScheduler();
     private final TrickOrTreatEvent trickOrTreatEvent = new TrickOrTreatEvent();
-    private final LocationString locationString = new LocationString();
 
     /**
      * This method is executed by the server when the server
@@ -237,7 +237,4 @@ public class Halloween extends JavaPlugin {
         return trickOrTreatEvent;
     }
 
-    public LocationString getLocationString() {
-        return locationString;
-    }
 }

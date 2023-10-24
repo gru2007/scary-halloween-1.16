@@ -122,7 +122,7 @@ public class ItemBuilder {
     }
 
     public ItemBuilder setUnbreakable(final boolean value) {
-        this.meta.spigot().setUnbreakable(value);
+        this.meta.setUnbreakable(value);
         return this;
     }
 

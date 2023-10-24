@@ -51,7 +51,7 @@ public class CreatureSpawnListener implements Listener {
                     // correct way:
                     if(entityType == EntityType.ZOMBIE
                             || entityType == EntityType.SKELETON
-                            || entityType == EntityType.PIG_ZOMBIE) {
+                            || entityType == EntityType.PIGLIN) {
                         // generate a random integer for the following procedure.
                         // 0 = Do nothing; 1 = Set the helmet to a normal pumpkin;
                         // 2 = Set the helmet to a jack'o'lantern
@@ -75,11 +75,11 @@ public class CreatureSpawnListener implements Listener {
                             // 4 = stone sword
                             // 5 = stone axe & chain helmet
                             if(entityType == EntityType.ZOMBIE
-                                    || entityType == EntityType.PIG_ZOMBIE) {
+                                    || entityType == EntityType.PIGLIN) {
                                 final int itemID = Halloween.getInstance().getMathUtils().getRandom(0, 5);
                                 switch (itemID) {
                                     case 0:
-                                        entity.getEquipment().setItemInHand(new ItemStack(Material.WOOD_SWORD));
+                                        entity.getEquipment().setItemInHand(new ItemStack(Material.WOODEN_SWORD));
                                         break;
                                     case 1:
                                         entity.getEquipment().setItemInHand(new ItemStack(Material.IRON_SWORD));
@@ -88,7 +88,7 @@ public class CreatureSpawnListener implements Listener {
                                         entity.getEquipment().setItemInHand(new ItemStack(Material.IRON_AXE));
                                         break;
                                     case 3:
-                                        entity.getEquipment().setItemInHand(new ItemStack(Material.WOOD_AXE));
+                                        entity.getEquipment().setItemInHand(new ItemStack(Material.WOODEN_AXE));
                                         entity.getEquipment().setHelmet(new ItemStack(Material.CHAINMAIL_HELMET));
                                         break;
                                     case 4:

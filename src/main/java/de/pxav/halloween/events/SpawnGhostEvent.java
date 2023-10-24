@@ -88,7 +88,7 @@ public class SpawnGhostEvent implements IEvent {
                 final int itemID = Halloween.getInstance().getMathUtils().getRandom(0, 5);
                 switch (itemID) {
                     case 0:
-                        livingEntity.getEquipment().setItemInHand(new ItemStack(Material.WOOD_SWORD));
+                        livingEntity.getEquipment().setItemInHand(new ItemStack(Material.WOODEN_SWORD));
                         final ItemStack itemStack = new ItemStack(Material.LEATHER_HELMET);
                         final LeatherArmorMeta leatherArmorMeta = (LeatherArmorMeta) itemStack.getItemMeta();
                         leatherArmorMeta.setColor(Color.BLUE);
@@ -107,7 +107,7 @@ public class SpawnGhostEvent implements IEvent {
                         livingEntity.getEquipment().setHelmet(new ItemStack(Material.CHAINMAIL_HELMET));
                         break;
                     case 3:
-                        livingEntity.getEquipment().setItemInHand(new ItemStack(Material.WOOD_AXE));
+                        livingEntity.getEquipment().setItemInHand(new ItemStack(Material.WOODEN_AXE));
                         livingEntity.getEquipment().setHelmet(new ItemStack(Material.CHAINMAIL_HELMET));
                         livingEntity.getEquipment().setHelmet(new ItemStack(Material.CHAINMAIL_CHESTPLATE));
                         break;

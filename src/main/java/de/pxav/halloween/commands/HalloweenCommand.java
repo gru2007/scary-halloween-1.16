@@ -103,31 +103,31 @@ public class HalloweenCommand implements CommandExecutor {
                     if(input.equalsIgnoreCase("JumpScare")) {
                         instance.getJumpScareEvent().countDown = 15;
                         player.sendMessage(instance.getSettingsHandler().getForcedEvent(15));
-                        player.playSound(player.getLocation(), Sound.ORB_PICKUP, 10F, 10F);
+                        player.playSound(player.getLocation(), Sound.ENTITY_EXPERIENCE_ORB_PICKUP, 10F, 10F);
                     } else if(input.equalsIgnoreCase("BatAttack")) {
                         instance.getBatAttackEvent().countDown = 15;
                         player.sendMessage(instance.getSettingsHandler().getForcedEvent(15));
-                        player.playSound(player.getLocation(), Sound.ORB_PICKUP, 10F, 10F);
+                        player.playSound(player.getLocation(), Sound.ENTITY_EXPERIENCE_ORB_PICKUP, 10F, 10F);
                     } else if(input.equalsIgnoreCase("ScarySound")) {
                         instance.getScarySoundEvent().countDown = 15;
                         player.sendMessage(instance.getSettingsHandler().getForcedEvent(15));
-                        player.playSound(player.getLocation(), Sound.ORB_PICKUP, 10F, 10F);
+                        player.playSound(player.getLocation(), Sound.ENTITY_EXPERIENCE_ORB_PICKUP, 10F, 10F);
                     } else if(input.equalsIgnoreCase("FakeLightning")) {
                         instance.getFakeLightningEvent().countDown = 15;
                         player.sendMessage(instance.getSettingsHandler().getForcedEvent(15));
-                        player.playSound(player.getLocation(), Sound.ORB_PICKUP, 10F, 10F);
+                        player.playSound(player.getLocation(), Sound.ENTITY_EXPERIENCE_ORB_PICKUP, 10F, 10F);
                     } else if(input.equalsIgnoreCase("SpawnGhost")) {
                         instance.getSpawnGhostEvent().countDown = 15;
                         player.sendMessage(instance.getSettingsHandler().getForcedEvent(15));
-                        player.playSound(player.getLocation(), Sound.ORB_PICKUP, 10F, 10F);
+                        player.playSound(player.getLocation(), Sound.ENTITY_EXPERIENCE_ORB_PICKUP, 10F, 10F);
                     } else if(input.equalsIgnoreCase("AirBoost")) {
                         instance.getAirBoostEvent().countDown = 15;
                         player.sendMessage(instance.getSettingsHandler().getForcedEvent(15));
-                        player.playSound(player.getLocation(), Sound.ORB_PICKUP, 10F, 10F);
+                        player.playSound(player.getLocation(), Sound.ENTITY_EXPERIENCE_ORB_PICKUP, 10F, 10F);
                     } else if(input.equalsIgnoreCase("FlyingJack")) {
                         instance.getFlyingJackEvent().countDown = 15;
                         player.sendMessage(instance.getSettingsHandler().getForcedEvent(15));
-                        player.playSound(player.getLocation(), Sound.ORB_PICKUP, 10F, 10F);
+                        player.playSound(player.getLocation(), Sound.ENTITY_EXPERIENCE_ORB_PICKUP, 10F, 10F);
                     } else {
                         player.sendMessage(settingsHandler.getPrefix() + " §8§m--------------------------");
                         player.sendMessage(settingsHandler.getPrefix() + " §eThe given name is invalid. Please ");
@@ -150,14 +150,14 @@ public class HalloweenCommand implements CommandExecutor {
                     if(targetPlayer != null) {
                         // open the inventory
                         instance.getScarePlayerInventory().open(player);
-                        player.playSound(player.getLocation(), Sound.ORB_PICKUP, 10F, 10F);
+                        player.playSound(player.getLocation(), Sound.ENTITY_EXPERIENCE_ORB_PICKUP, 10F, 10F);
                         // assign the trolling player to the trolled player
                         instance.getPlayerHandler().scaringPlayer.put(player, targetPlayer);
                     } else
                         player.sendMessage(settingsHandler.getPlayerNotOnline());
                 } else if(args.length == 1 && args[0].equalsIgnoreCase("pumpkins")) {
                     instance.getPumpkinPlaceInventory().open(player);
-                    player.playSound(player.getLocation(), Sound.ORB_PICKUP, 10F, 10F);
+                    player.playSound(player.getLocation(), Sound.ENTITY_EXPERIENCE_ORB_PICKUP, 10F, 10F);
                 } else if(args.length == 1 && (args[0].equalsIgnoreCase("reload") || args[0].equalsIgnoreCase("rl"))) {
                     instance.saveDefaultConfig();
                     player.sendMessage(settingsHandler.getPrefix() + " §8[§2✔§8] §eSuccessfully loaded §6§lfiles");

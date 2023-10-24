@@ -61,15 +61,15 @@ public class ScarySoundEvent implements IEvent {
     @Override
     public void prepare() {
         // load the sound which should be played.
-        soundToPlay.add(Sound.WOLF_GROWL);
-        soundToPlay.add(Sound.WOLF_HOWL);
-        soundToPlay.add(Sound.ZOMBIE_UNFECT);
-        soundToPlay.add(Sound.WITHER_SPAWN);
-        soundToPlay.add(Sound.WITHER_SHOOT);
-        soundToPlay.add(Sound.ITEM_BREAK);
-        soundToPlay.add(Sound.CREEPER_HISS);
-        soundToPlay.add(Sound.GHAST_SCREAM);
-        soundToPlay.add(Sound.COW_WALK);
+        soundToPlay.add(Sound.ENTITY_WOLF_GROWL);
+        soundToPlay.add(Sound.ENTITY_WOLF_HOWL);
+        soundToPlay.add(Sound.ENTITY_ZOMBIE_VILLAGER_CONVERTED);
+        soundToPlay.add(Sound.ENTITY_WITHER_SPAWN);
+        soundToPlay.add(Sound.ENTITY_WITHER_SHOOT);
+        soundToPlay.add(Sound.ENTITY_ITEM_BREAK);
+        soundToPlay.add(Sound.ENTITY_CREEPER_PRIMED);
+        soundToPlay.add(Sound.ENTITY_GHAST_SCREAM);
+        soundToPlay.add(Sound.ENTITY_COW_STEP);
     }
 
     /**

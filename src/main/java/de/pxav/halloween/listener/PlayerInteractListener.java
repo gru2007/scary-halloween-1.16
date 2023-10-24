@@ -35,24 +35,24 @@ public class PlayerInteractListener implements Listener {
                     if(Halloween.getInstance().getPumpkinHandler().getPumpkinType(event.getClickedBlock().getLocation()) == PumpkinType.CLICKABLE) {
                         if(event.getClickedBlock().getType() == Material.PUMPKIN) {
                             // play the pumpkin click effects.
-                            player.playSound(player.getLocation(), Sound.ENDERDRAGON_GROWL, 3, 1);
+                            player.playSound(player.getLocation(), Sound.ENTITY_ENDER_DRAGON_GROWL, 3, 1);
                             event.getClickedBlock().setType(Material.JACK_O_LANTERN);
                             for (int i = 0; i < 50; i++)
-                                player.playEffect(event.getClickedBlock().getLocation(), Effect.FLAME, 1);
+                                player.spawnParticle(Particle.FLAME, event.getClickedBlock().getLocation(), 1);
                             for (int i = 0; i < 50; i++)
-                                player.playEffect(event.getClickedBlock().getLocation().add(1, 0, 0), Effect.FLAME, 1);
+                                player.spawnParticle(Particle.FLAME, event.getClickedBlock().getLocation().add(1, 0, 0), 1);
                             for (int i = 0; i < 50; i++)
-                                player.playEffect(event.getClickedBlock().getLocation().add(0, 0, 1), Effect.FLAME, 1);
+                                player.spawnParticle(Particle.FLAME, event.getClickedBlock().getLocation().add(0, 0, 1), 1);
                             for (int i = 0; i < 50; i++)
-                                player.playEffect(event.getClickedBlock().getLocation(), Effect.LAVA_POP, 1);
+                                player.spawnParticle(Particle.LAVA, event.getClickedBlock().getLocation(), 1);
                             for (int i = 0; i < 50; i++)
-                                player.playEffect(event.getClickedBlock().getLocation(), Effect.LAVA_POP, 1);
+                                player.spawnParticle(Particle.LAVA, event.getClickedBlock().getLocation(), 1);
                             for (int i = 0; i < 50; i++)
-                                player.playEffect(event.getClickedBlock().getLocation(), Effect.LAVA_POP, 1);
+                                player.spawnParticle(Particle.LAVA, event.getClickedBlock().getLocation(), 1);
                             for (int i = 0; i < 50; i++)
-                                player.playEffect(event.getClickedBlock().getLocation().add(1, 0, 0), Effect.LAVA_POP, 1);
+                                player.spawnParticle(Particle.LAVA, event.getClickedBlock().getLocation().add(1, 0, 0), 1);
                             for (int i = 0; i < 50; i++)
-                                player.playEffect(event.getClickedBlock().getLocation().add(0, 0, 1), Effect.LAVA_POP, 1);
+                                player.spawnParticle(Particle.LAVA, event.getClickedBlock().getLocation().add(0, 0, 1), 1);
                             Bukkit.getScheduler().runTaskLater(Halloween.getInstance(), () -> {
                                 if(event.getClickedBlock().getType() == Material.JACK_O_LANTERN) {
                                     event.getClickedBlock().setType(Material.PUMPKIN);
@@ -74,15 +74,15 @@ public class PlayerInteractListener implements Listener {
                         event.getClickedBlock().setType(Material.AIR);
 
                         // play some spooky effects
-                        player.playSound(player.getLocation(), Sound.EXPLODE, 3, 1);
+                        player.playSound(player.getLocation(), Sound.ENTITY_GENERIC_EXPLODE, 3, 1);
                         for (int i = 0; i < 50; i++)
-                            player.playEffect(player.getLocation(), Effect.EXPLOSION_LARGE, 1);
+                            player.spawnParticle(Particle.EXPLOSION_LARGE, player.getLocation(), 1);
                         for (int i = 0; i < 50; i++)
-                            player.playEffect(player.getLocation(), Effect.LARGE_SMOKE, 1);
+                            player.spawnParticle(Particle.SMOKE_LARGE, player.getLocation(), 1);
                         for (int i = 0; i < 50; i++)
-                            player.playEffect(player.getLocation(), Effect.PARTICLE_SMOKE, 1);
+                            player.spawnParticle(Particle.SMOKE_NORMAL, player.getLocation(), 1);
                         for (int i = 0; i < 50; i++)
-                            player.playEffect(player.getLocation(), Effect.LAVA_POP, 1);
+                            player.spawnParticle(Particle.LAVA, player.getLocation(), 1);
 
                         if(Halloween.getInstance().getSettingsHandler().isExplodeChests())
                             event.getClickedBlock().getWorld().createExplosion(event.getClickedBlock().getLocation(), 4, true);

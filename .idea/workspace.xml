@@ -1,11 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4997f91-b3e3-4f94-8a05-93a7a6102a95" name="Default" comment="" />
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
+    <list default="true" id="e4997f91-b3e3-4f94-8a05-93a7a6102a95" name="Default" comment=".gitignore">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/pxav/halloween/Halloween.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/pxav/halloween/Halloween.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/pxav/halloween/commands/HalloweenCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/pxav/halloween/commands/HalloweenCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/pxav/halloween/events/BatAttackEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/pxav/halloween/events/BatAttackEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/pxav/halloween/events/FakeLightningEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/pxav/halloween/events/FakeLightningEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/pxav/halloween/events/JumpScareEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/pxav/halloween/events/JumpScareEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/pxav/halloween/events/ScarySoundEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/pxav/halloween/events/ScarySoundEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/pxav/halloween/events/SpawnGhostEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/pxav/halloween/events/SpawnGhostEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/pxav/halloween/items/ItemBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/pxav/halloween/items/ItemBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/pxav/halloween/items/PumpkinPlaceInventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/pxav/halloween/items/PumpkinPlaceInventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/pxav/halloween/items/ScarePlayerInventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/pxav/halloween/items/ScarePlayerInventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/pxav/halloween/listener/BlockPlaceListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/pxav/halloween/listener/BlockPlaceListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/pxav/halloween/listener/CreatureSpawnListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/pxav/halloween/listener/CreatureSpawnListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/pxav/halloween/listener/InventoryClickListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/pxav/halloween/listener/InventoryClickListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/pxav/halloween/listener/PlayerInteractListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/pxav/halloween/listener/PlayerInteractListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/pxav/halloween/pumpkins/PumpkinDistanceScheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/pxav/halloween/pumpkins/PumpkinDistanceScheduler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/pxav/halloween/pumpkins/PumpkinLauncherScheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/pxav/halloween/pumpkins/PumpkinLauncherScheduler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Halloween-Event-Plugin-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/config_de.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/pxav/halloween/Halloween.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/pxav/halloween/Halloween.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/pxav/halloween/commands/HalloweenCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/pxav/halloween/commands/HalloweenCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/pxav/halloween/events/BatAttackEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/pxav/halloween/events/BatAttackEvent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/pxav/halloween/events/FakeLightningEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/pxav/halloween/events/FakeLightningEvent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/pxav/halloween/events/JumpScareEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/pxav/halloween/events/JumpScareEvent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/pxav/halloween/events/ScarySoundEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/pxav/halloween/events/ScarySoundEvent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/pxav/halloween/events/SpawnGhostEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/pxav/halloween/events/SpawnGhostEvent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/pxav/halloween/events/manual/TrickOrTreatEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/pxav/halloween/events/manual/TrickOrTreatEvent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/pxav/halloween/items/ItemBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/pxav/halloween/items/ItemBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/pxav/halloween/items/PumpkinPlaceInventory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/pxav/halloween/items/PumpkinPlaceInventory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/pxav/halloween/items/ScarePlayerInventory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/pxav/halloween/items/ScarePlayerInventory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/pxav/halloween/listener/BlockPlaceListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/pxav/halloween/listener/BlockPlaceListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/pxav/halloween/listener/CreatureSpawnListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/pxav/halloween/listener/CreatureSpawnListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/pxav/halloween/listener/InventoryClickListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/pxav/halloween/listener/InventoryClickListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/pxav/halloween/listener/PlayerInteractListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/pxav/halloween/listener/PlayerInteractListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/pxav/halloween/pumpkins/PumpkinDistanceScheduler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/pxav/halloween/pumpkins/PumpkinDistanceScheduler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/pxav/halloween/pumpkins/PumpkinLauncherScheduler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/pxav/halloween/pumpkins/PumpkinLauncherScheduler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/pxav/halloween/utils/LocationString.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -212,13 +256,6 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
   <component name="MavenProjectNavigator">
     <treeState>
       <expand>
@@ -244,6 +281,7 @@
     <option name="width" value="1936" />
     <option name="height" value="1176" />
   </component>
+  <component name="ProjectId" id="2XBmfnyxNTCSPAgCCPyeLrSwVay" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -372,17 +410,16 @@
       </pane>
     </panes>
   </component>
-  <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SpigotMC.org - [1.9] HalloweenEventPlugin" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="de.pxav.halloween.commands" />
@@ -391,16 +428,9 @@
       <recent name="C:\Users\raphael\IdeaProjects\SpigotMC.org - HalloweenEventPlugin\src\main\resources" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean compile" />
     </option>
   </component>
   <component name="RunManager">
@@ -414,47 +444,31 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
+    <configuration default="true" type="TestNG">
       <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
       <properties />
       <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <recent_temporary>
       <list>
@@ -462,6 +476,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -478,6 +493,15 @@
       <workItem from="1539619679668" duration="1089000" />
       <workItem from="1540712440397" duration="10677000" />
     </task>
+    <task id="LOCAL-00001" summary=".gitignore">
+      <option name="closed" value="true" />
+      <created>1698116863191</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1698116863191</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -520,8 +544,21 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update to 1.16 (may have bugs)" />
+    <MESSAGE value=".gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value=".gitignore" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/de/pxav/halloween/events/EventBase.java" />

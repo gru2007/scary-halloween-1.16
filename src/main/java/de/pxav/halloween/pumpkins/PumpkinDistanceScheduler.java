@@ -1,10 +1,7 @@
 package de.pxav.halloween.pumpkins;
 
 import de.pxav.halloween.Halloween;
-import org.bukkit.Bukkit;
-import org.bukkit.Effect;
-import org.bukkit.Location;
-import org.bukkit.Sound;
+import org.bukkit.*;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -51,7 +48,7 @@ public class PumpkinDistanceScheduler {
                             if(current.getLocation().distance(location) <= Halloween.getInstance().getSettingsHandler().getLightningPumpkinDistance()) {
                                 Bukkit.getScheduler().scheduleSyncDelayedTask(Halloween.getInstance(), () -> {
                                     current.getWorld().strikeLightningEffect(location);
-                                    current.playSound(current.getLocation(), Sound.AMBIENCE_THUNDER, 3, 1);
+                                    current.playSound(current.getLocation(), Sound.ENTITY_LIGHTNING_BOLT_THUNDER, 3, 1);
                                 });
                             }
                         }
@@ -62,8 +59,8 @@ public class PumpkinDistanceScheduler {
                         if(current.getWorld().getName().equalsIgnoreCase(location.getWorld().getName())) {
                             if(current.getLocation().distance(location) < 30) {
                                 Bukkit.getScheduler().scheduleSyncDelayedTask(Halloween.getInstance(), () -> {
-                                    current.playEffect(location, Effect.PARTICLE_SMOKE, 1);
-                                    current.playEffect(location.add(0, 1, 0), Effect.LARGE_SMOKE, 1);
+                                    current.spawnParticle(Particle.SMOKE_NORMAL, location, 1);
+                                    current.spawnParticle(Particle.SMOKE_LARGE, location.add(0, 1, 0), 1);
                                 });
                             }
                         }

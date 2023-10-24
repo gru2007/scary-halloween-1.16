@@ -36,7 +36,7 @@ public class InventoryClickListener implements Listener {
             final SettingsHandler settingsHandler = instance.getSettingsHandler();
             final Player player = (Player) event.getWhoClicked();
 
-            if(event.getClickedInventory().getName().equalsIgnoreCase(settingsHandler.getScareInventoryTitle())) {
+            if(event.getView().getTitle().equalsIgnoreCase(settingsHandler.getScareInventoryTitle())) {
                 event.setCancelled(true);
                 final Player targetPlayer = instance.getPlayerHandler().scaringPlayer.get(player);
                 if(event.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase(settingsHandler.getScareInventoryJumpScare())) {
@@ -120,29 +120,29 @@ public class InventoryClickListener implements Listener {
                         || event.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase(settingsHandler.getScareInventoryNotAvailable())) {
                     if(Halloween.getInstance().getSettingsHandler().getAffectedWorlds().contains(targetPlayer.getWorld().getName())) {
                         player.closeInventory();
-                        player.playSound(player.getLocation(), Sound.VILLAGER_NO, 3, 1);
+                        player.playSound(player.getLocation(), Sound.ENTITY_VILLAGER_NO, 3, 1);
                         player.sendMessage(settingsHandler.getFeatureUnavailable());
                     } else
                         player.sendMessage(Halloween.getInstance().getSettingsHandler().getPlayerNotInWorld());
 
                 }
-            } else if(event.getClickedInventory().getName().equalsIgnoreCase(settingsHandler.getPumpkinInventoryTitle())) {
+            } else if(event.getView().getTitle().equalsIgnoreCase(settingsHandler.getPumpkinInventoryTitle())) {
                 event.setCancelled(true);
                 if(event.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase(settingsHandler.getPumpkinInventoryClickable())) {
                     player.getInventory().addItem(new ItemBuilder(Material.PUMPKIN).setDisplayName(PumpkinPlaceInventory.PLACE_CLICKABLE).build());
-                    player.playSound(player.getLocation(), Sound.LEVEL_UP, 10F, 10F);
+                    player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 10F, 10F);
                 } else if(event.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase(settingsHandler.getPumpkinInventoryLightning())) {
                     player.getInventory().addItem(new ItemBuilder(Material.PUMPKIN).setDisplayName(PumpkinPlaceInventory.PLACE_LIGHTNING).build());
-                    player.playSound(player.getLocation(), Sound.LEVEL_UP, 10F, 10F);
+                    player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 10F, 10F);
                 } else if(event.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase(settingsHandler.getPumpkinInventorySmoking())) {
                     player.getInventory().addItem(new ItemBuilder(Material.PUMPKIN).setDisplayName(PumpkinPlaceInventory.PLACE_SMOKING).build());
-                    player.playSound(player.getLocation(), Sound.LEVEL_UP, 10F, 10F);
+                    player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 10F, 10F);
                 } else if(event.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase(settingsHandler.getPumpkinInventoryGlowing())) {
                     player.getInventory().addItem(new ItemBuilder(Material.PUMPKIN).setDisplayName(PumpkinPlaceInventory.PLACE_GLOWING).build());
-                    player.playSound(player.getLocation(), Sound.LEVEL_UP, 10F, 10F);
+                    player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 10F, 10F);
                 } else if(event.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase(settingsHandler.getPumpkinInventoryJumpScare())) {
                     player.getInventory().addItem(new ItemBuilder(Material.PUMPKIN).setDisplayName(PumpkinPlaceInventory.PLACE_JUMP_SCARE).build());
-                    player.playSound(player.getLocation(), Sound.LEVEL_UP, 10F, 10F);
+                    player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 10F, 10F);
                 }
             }
 

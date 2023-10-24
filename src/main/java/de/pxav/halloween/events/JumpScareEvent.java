@@ -42,7 +42,7 @@ public class JumpScareEvent implements IEvent {
                 if(countDown == 10) {
                     Bukkit.getOnlinePlayers().forEach(current -> {
                         if(instance.getSettingsHandler().getAffectedWorlds().contains(current.getWorld().getName()))
-                            current.playSound(current.getLocation(), Sound.ENDERMAN_IDLE, 3, 1);
+                            current.playSound(current.getLocation(), Sound.ENTITY_ENDERMAN_AMBIENT, 3, 1);
                     });
                 }
 
@@ -85,7 +85,7 @@ public class JumpScareEvent implements IEvent {
             playerHelmets.put(player.getUniqueId(), player.getInventory().getHelmet());
 
             // plays a scary sound.
-            player.playSound(player.getLocation(), Sound.ENDERMAN_SCREAM, 3F, 1F);
+            player.playSound(player.getLocation(), Sound.ENTITY_ENDERMAN_SCREAM, 3F, 1F);
 
             // sets the pumpkin helmet.
             player.getInventory().setHelmet(pumpkinHelmet);

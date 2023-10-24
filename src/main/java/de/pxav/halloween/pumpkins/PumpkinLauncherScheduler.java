@@ -33,13 +33,13 @@ public class PumpkinLauncherScheduler {
                         Bukkit.getOnlinePlayers().forEach(current -> {
                             if(current.getWorld().getName().equalsIgnoreCase(location.getWorld().getName())) {
                                 if(current.getLocation().distance(location) < 13.0D)
-                                    current.playSound(current.getLocation(), Sound.FIRE_IGNITE, 3, 1);
+                                    current.playSound(current.getLocation(), Sound.ITEM_FLINTANDSTEEL_USE, 3, 1);
                                 for (int i = 0; i < 3; i++)
-                                    current.playEffect(location, Effect.LAVA_POP, 1);
+                                    current.spawnParticle(Particle.LAVA, location, 1);
                                 for (int i = 0; i < 3; i++)
-                                    current.playEffect(location, Effect.FIREWORKS_SPARK, 1);
+                                    current.spawnParticle(Particle.FIREWORKS_SPARK, location, 1);
                                 for (int i = 0; i < 3; i++)
-                                    current.playEffect(location, Effect.COLOURED_DUST, 1);
+                                    current.spawnParticle(Particle.BLOCK_DUST, location, 1);
                             }
                         });
                     } else if(location.getWorld().getBlockAt(location).getType() == Material.JACK_O_LANTERN) {
@@ -49,7 +49,7 @@ public class PumpkinLauncherScheduler {
                                 for (int i = 0; i < 3; i++)
                                     current.playEffect(location, Effect.EXTINGUISH, 1);
                                 for (int i = 0; i < 3; i++)
-                                    current.playEffect(location, Effect.CLOUD, 1);
+                                    current.spawnParticle(Particle.CLOUD, location, 1);
                             }
                         });
                     }

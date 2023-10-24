@@ -3,6 +3,7 @@ package de.pxav.halloween.events;
 import de.pxav.halloween.Halloween;
 import org.bukkit.Bukkit;
 import org.bukkit.Effect;
+import org.bukkit.Particle;
 import org.bukkit.Sound;
 import org.bukkit.entity.Player;
 
@@ -69,12 +70,12 @@ public class FakeLightningEvent implements IEvent {
             player.getWorld().strikeLightningEffect(player.getLocation());
 
             // play some other effects
-            player.playEffect(player.getLocation(), Effect.EXPLOSION_LARGE, 1);
-            player.playEffect(player.getLocation(), Effect.LAVA_POP, 1);
-            player.playEffect(player.getLocation(), Effect.LARGE_SMOKE, 1);
+            player.spawnParticle(Particle.EXPLOSION_LARGE, player.getLocation(), 1);
+            player.spawnParticle(Particle.LAVA, player.getLocation(), 1);
+            player.spawnParticle(Particle.SMOKE_LARGE, player.getLocation(), 1);
 
             // play the lightning sound to make it more realistic.
-            player.playSound(player.getLocation(), Sound.AMBIENCE_THUNDER, 3, 1);
+            player.playSound(player.getLocation(), Sound.ENTITY_LIGHTNING_BOLT_THUNDER, 3, 1);
         }
     }
 

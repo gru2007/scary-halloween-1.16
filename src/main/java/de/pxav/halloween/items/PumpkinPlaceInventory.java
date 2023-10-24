@@ -29,7 +29,7 @@ public class PumpkinPlaceInventory {
     private ItemStack fillMaterial;
 
     public void prepare() {
-        fillMaterial = new ItemBuilder(Material.STAINED_GLASS_PANE, (short) 7)
+        fillMaterial = new ItemBuilder(Material.LIGHT_BLUE_STAINED_GLASS_PANE, (short) 7)
                 .setNoName()
                 .setAmount(1)
                 .build();
@@ -56,7 +56,7 @@ public class PumpkinPlaceInventory {
         inventory.setItem(27, fillMaterial);
 
         // set troll items
-        inventory.setItem(20, new ItemBuilder(Material.REDSTONE_LAMP_OFF)
+        inventory.setItem(20, new ItemBuilder(Material.REDSTONE_LAMP)
                 .setDisplayName(settingsHandler.getPumpkinInventoryGlowing())
                 .addLoreAll(settingsHandler.getPumpkinInventoryGlowingLore())
                 .build());

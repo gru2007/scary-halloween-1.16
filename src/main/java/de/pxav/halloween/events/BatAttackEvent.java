@@ -85,8 +85,8 @@ public class BatAttackEvent implements IEvent {
 
 
             // plays a scary sound.
-            player.playSound(player.getLocation(), Sound.BAT_DEATH, 3F, 1F);
-            player.playSound(player.getLocation(), Sound.BAT_TAKEOFF, 3F, 1F);
+            player.playSound(player.getLocation(), Sound.ENTITY_BAT_DEATH, 3F, 1F);
+            player.playSound(player.getLocation(), Sound.ENTITY_BAT_TAKEOFF, 3F, 1F);
 
             // remove the bats after some time
             Bukkit.getScheduler().runTaskLater(Halloween.getInstance(), ()
